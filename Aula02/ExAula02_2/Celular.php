@@ -4,9 +4,6 @@ class Celular {
 
     var $ligado;
     var $porcetagem;
-    var $cor;
-    var $polegadas;
-    var $silencioso;
 
     public function ligar() {
         if ($this->ligado) {
@@ -22,12 +19,12 @@ class Celular {
     }
 
     public function carga($carga) {
-        if ($this->carga == 100) {
+        if ($this->porcetagem == 100) {
             echo "Telefone não precisa de mais carga! 100%";
-        } else if ($this->carga > 0 && $this->carga < 100) {
+        } else if ($this->porcetagem > 0 && $this->porcetagem < 100) {
             echo "Recarregando celular: $carga%";
+            $this->porcetagem = $carga;
         }
     }
-
 }
 ?>
