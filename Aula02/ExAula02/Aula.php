@@ -27,7 +27,7 @@ class Aula {
             if ($this->qAulos < 15) {
                 echo "Quantidade insuficiente de alunos para dar uma aula completa!";
             } else {
-                if ($this->data == null) {
+                if ($this->data == "") {
                     if ($this->audiar) {
                         echo "Aula adiada. Ela está prevista para começar no dia ".$this->dataAdiar;
                     } else {
