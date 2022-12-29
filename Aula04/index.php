@@ -10,10 +10,11 @@
     <pre>
         <?php
             require_once('./Caneta.php');
-            $c1 = new Caneta();
-            $c1->setModelo('BIC CRISTAL');
-            $c1->setPonta(0.5);
+            $c1 = new Caneta('BIC CRISTAL', 'Vermelha', 1.0);
+            $c2 = new Caneta('NATURE', 'Verde', 0.4);
             print_r($c1);
+            echo "<br>";
+            print_r($c2);
         ?>
     </pre>
 </body>
