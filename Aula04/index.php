@@ -7,9 +7,14 @@
     <title>Curso de POO</title>
 </head>
 <body>
-    <?php
-        require_once('./Caneta.php');
-        $c1 = new Caneta();
-    ?>
+    <pre>
+        <?php
+            require_once('./Caneta.php');
+            $c1 = new Caneta();
+            $c1->setModelo('BIC CRISTAL');
+            $c1->setPonta(0.5);
+            print_r($c1);
+        ?>
+    </pre>
 </body>
 </html>
